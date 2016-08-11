@@ -14,7 +14,7 @@ return array(
     'namespace' => 'humhub\modules\calendar',
     'events' => array(
         array('class' => Menu::className(), 'event' => Menu::EVENT_INIT, 'callback' => array('humhub\modules\calendar\Events', 'onSpaceMenuInit')),
-        array('class' => ProfileMenu::className(), 'event' => ProfileMenu::EVENT_INIT, 'callback' => array('humhub\modules\calendar\Events', 'onProfileMenuInit')),
+        //array('class' => ProfileMenu::className(), 'event' => ProfileMenu::EVENT_INIT, 'callback' => array('humhub\modules\calendar\Events', 'onProfileMenuInit')),
         array('class' => Sidebar::className(), 'event' => Sidebar::EVENT_INIT, 'callback' => array('humhub\modules\calendar\Events', 'onSpaceSidebarInit')),
         array('class' => ProfileSidebar::className(), 'event' => ProfileSidebar::EVENT_INIT, 'callback' => array('humhub\modules\calendar\Events', 'onProfileSidebarInit')),
         array('class' => humhub\modules\dashboard\widgets\Sidebar::className(), 'event' => humhub\modules\dashboard\widgets\Sidebar::EVENT_INIT, 'callback' => array('humhub\modules\calendar\Events', 'onDashboardSidebarInit')),
